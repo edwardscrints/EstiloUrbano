@@ -1,12 +1,11 @@
 .heading {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-  text-align: center;
-
-  &-text{
-    font-family: 'Codystar', cursive;
-    font-size: size(xl) * 2;
-    font-weight: lighter;
-    letter-spacing: .5rem;
-  }
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+    &-text {
+        font-family: 'josefin sans', cursive;
+        font-size: size(xl) * 2;
+        font-weight: lighter;
+        letter-spacing: .5rem;
+    }
 }
