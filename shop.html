@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans:300,400,600" rel="stylesheet">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+        <br>
+        <h1 class="heading-text">ShOP</h1>
+    </div>
+    <div class="grid-productos" id="productos">
+        <div class="producto-card" onclick="mostrarGaleria('mujer')">
+            <div class="producto-titulo">MUJER
+                <div class="product">
+                    <img src="images/img5.jpg" class="product-img">
+                </div>
+            </div>
+        </div>
+        <div class="producto-card" onclick="mostrarGaleria('hombre')">
+            <div class="producto-titulo">HOMBRE
+                <div class="product">
+                    <img src="images/img3.jpg" class="product-img">
+                </div>
+            </div>
+        </div>
+        <div class="producto-card" onclick="mostrarGaleria('young')">
+            <div class="producto-titulo">YOUNG
+                <div class="product">
+                    <img src="images/img6.jpg" class="product-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería MUJER -->
+    <div class="galeria" id="galeria-mujer">
+        <img src="images/producto1.png" alt="Mujer 1">
+        <img src="images/producto7.jpg" alt="Mujer 2">
+        <img src="images/producto8.jpg" alt="Mujer 3">
+        <img src="images/img1.jpg" alt="Mujer 4">
+        <img src="images/producto4.jpg" alt="Mujer 5">
+        <img src="images/producto5.jpg" alt="Mujer 6">
+        <img src="images/producto6.jpg" alt="Mujer 7">
+        <button class="btn-volver" onclick="volver()">Volver</button>
+        <p class="product-description-price">COLECCIONES DESDE <span>$250.000</span></p>
+
+    </div>
+    <!-- Galería HOMBRE -->
+    <div class="galeria" id="galeria-hombre">
+        <img src="images/producto9.jpg" alt="Hombre 1">
+        <img src="images/producto10.jpg" alt="Hombre 2">
+        <img src="images/producto11.jpg" alt="Hombre 3">
+        <img src="images/producto12.jpg" alt="Hombre 4">
+        <img src="images/producto13.jpg" alt="Hombre 5">
+        <img src="images/producto14.jpg" alt="Hombre 6">
+        <button class="btn-volver" onclick="volver()">Volver</button>
+        <p class="product-description-price">COLECCIONES DESDE <span>$300.000</span></p>
+    </div>
+    <!-- Galería YOUNG -->
+    <div class="galeria" id="galeria-young">
+        <img src="images/producto7.jpg" alt="Young 1">
+        <img src="images/img6.jpg" alt="Young 2">
+        <img src="images/producto3.png" alt="Young 3">
+        <img src="images/producto4.jpg" alt="Young 4">
+        <img src="images/img5.jpg" alt="Young 5">
+        <img src="images/producto01.jpg" alt="Young 6">
+        <button class="btn-volver" onclick="volver()">Volver</button>
+        <p class="product-description-price">COLECCIONES DESDE <span>$150.000</span></p>
+    </div>
+
+    <script>
+        function mostrarGaleria(tipo) {
+            document.getElementById('productos').style.display = 'none';
+            document.getElementById('galeria-' + tipo).classList.add('active');
+        }
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const galeria = params.get('galeria');
+            if (galeria) {
+                document.getElementById('productos').style.display = 'none';
+                const galeriaDiv = document.getElementById('galeria-' + galeria);
+                if (galeriaDiv) galeriaDiv.classList.add('active');
+            }
+        };
+
+        function volver() {
+            document.getElementById('productos').style.display = 'grid';
+            document.querySelectorAll('.galeria').forEach(g => g.classList.remove('active'));
+        }
+    </script>
+</body>
+
+</html>
