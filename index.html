@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <title>UrbanStyle Tienda</title>
 </head>
@@ -26,17 +26,17 @@
             <nav class="first-nav">
                 <ul class="first-nav-list">
                     <li class="first-nav-item">
-                        <a href="#" class="first-nav-link">
+                        <a onclick="location.href='shop.html'" class="first-nav-link">
                             <i class="fas fa-search"></i>Buscar aqui
                         </a>
                     </li>
                     <li class="first-nav-item">
-                        <a href="#" class="first-nav-link">
+                        <a onclick="location.href='shop.html'" class="first-nav-link">
                 Encuentra tu talla
               </a>
                     </li>
                     <li class="first-nav-item">
-                        <a href="#" class="first-nav-link">
+                        <a onclick="location.href='shop.html'" class="first-nav-link">
                 Iniciar Sesion
               </a>
                     </li>
@@ -48,7 +48,7 @@
                 </ul>
             </nav>
             <div class="heading">
-                <h1 class="heading-text">URBaN STyLE</h1>
+                <h1 class="heading-text" onclick="location.href='shop.html'">URBaN STyLE</h1>
             </div>
 
         </header>
@@ -60,62 +60,59 @@
                 <div class="slideshow-content">
                     <h2>Lo mas Nuevo</h2>
                 </div>
-                <img src="images/img1.jpg" alt="">
+                <img src="images/img1.jpg" alt="banner1">
             </div>
             <div class="slideshow-slide">
                 <div class="slideshow-content">
                     <h2>Estilo Casual</h2>
                 </div>
-                <img src="images/img2.jpg" alt="">
+                <img src="images/img2.jpg" alt="banner2">
             </div>
             <div class="slideshow-slide">
                 <div class="slideshow-content">
                     <h2>Coleccion BAGGY</h2>
                 </div>
-                <img src="images/img3.jpg" alt="">
+                <img src="images/img3.jpg" alt="banner3">
             </div>
             <div class="slideshow-slide">
                 <div class="slideshow-content">
                     <h2>Camisetas FreeWay</h2>
                 </div>
-                <img src="images/img4.jpg" alt="">
+                <img src="images/img4.jpg" alt="banner4">
             </div>
             <div class="slideshow-slide">
                 <div class="slideshow-content">
                     <h2>Tendencias</h2>
                 </div>
-                <img src="images/img5.jpg" alt="">
+                <img src="images/img6.jpg" alt="banner5">
             </div>
         </section>
         <!-- end -->
         <!-- products -->
         <section class="products">
             <div class="products-heading">
-                <h1 class="products-heading-text">Coleccion .Ecologica y Sostenible.</h1>
+                <h1 class="products-heading-text ">Coleccion .Ecologica y Sostenible.</h1>
             </div>
             <div class="products-wrapper">
                 <div class="product">
-                    <img src="images/product1.png" alt="" class="product-img">
+                    <img src="images/producto1.png" alt="Mujer1" class="product-img" onclick="mostrarGaleria('mujer')">
                     <div class="product-description">
                         <h2 class="product-description-heading">MUJER</h2>
-                        <p class="product-description-price">COLECCION <span>$150.000</span></p>
-                        <a href="#" class="product-description-btn">MIRA +</a>
+                        <a class="product-description-btn" onclick="mostrarGaleria('mujer')">MIRA</a>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="images/product2.png" alt="" class="product-img">
+                    <img src="images/producto2.png" alt="Hombre1" class="product-img" onclick="mostrarGaleria('hombre')">
                     <div class="product-description">
                         <h2 class="product-description-heading">HOMBRE</h2>
-                        <p class="product-description-price">COLECCION <span>$110.000</span></p>
-                        <a href="#" class="product-description-btn">MIRA +</a>
+                        <a href="#" class="product-description-btn" onclick="mostrarGaleria('hombre')">MIRA</a>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="images/product3.png" alt="" class="product-img">
+                    <img src="images/producto3.png" alt="Mujer2" class="product-img" onclick="mostrarGaleria('young')">
                     <div class="product-description">
                         <h2 class="product-description-heading">YOUNG</h2>
-                        <p class="product-description-price">COLECCION <span>$50.000</span></p>
-                        <a href="#" class="product-description-btn">MIRA +</a>
+                        <a href="#" class="product-description-btn" onclick="mostrarGaleria('young')">MIRA</a>
                     </div>
                 </div>
             </div>
@@ -129,30 +126,30 @@
                 <nav class="second-nav">
                     <ul class="second-nav-list">
                         <li class="second-nav-item">
-                            <a href="#" class="second-nav-link">Shop</a>
+                            <a href="# " class="second-nav-link">Shop</a>
                         </li>
                         <li class="second-nav-item dropdown-li">
-                            <a href="#" class="second-nav-link">Tarjetas de Regalo</a>
+                            <a href="# " class="second-nav-link">Tarjetas de Regalo</a>
                             <ul class="dropdown">
                                 <li class="dropdown-item">
-                                    <a href="#" class="dropdown-link">$50.000 COP</a>
+                                    <a href="# " class="dropdown-link">$50.000 COP</a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="#" class="dropdown-link">$150.000 COP</a>
+                                    <a href="# " class="dropdown-link">$150.000 COP</a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="#" class="dropdown-link">$250.000 COP</a>
+                                    <a href="# " class="dropdown-link">$250.000 COP</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="second-nav-item">
-                            <a href="#" class="second-nav-link">Nosotros</a>
+                        <li class="second-nav-item ">
+                            <a href="# " class="second-nav-link ">Tienda Fisica</a>
                         </li>
-                        <li class="second-nav-item">
-                            <a href="#" class="second-nav-link">El equipo</a>
+                        <li class="second-nav-item ">
+                            <a href="# " class="second-nav-link ">El equipo</a>
                         </li>
-                        <li class="second-nav-item">
-                            <a href="#" class="second-nav-link">Ofertas</a>
+                        <li class="second-nav-item ">
+                            <a href="# " class="second-nav-link ">Ofertas</a>
                         </li>
                     </ul>
                 </nav>
@@ -167,27 +164,27 @@
                 </h3>
                 <ul class="footer-nav">
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">
+                        <a href="# " class="footer-nav-link">
                 Medios de Pago
               </a>
                     </li>
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">
+                        <a href=" # " class="footer-nav-link">
                 Ofertas
               </a>
                     </li>
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">
+                        <a href="# " class="footer-nav-link">
                 Devoluciones
               </a>
                     </li>
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">
+                        <a href="# " class="footer-nav-link">
                 Nuestra Politica
               </a>
                     </li>
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">
+                        <a href="# " class="footer-nav-link">
                 Contacto
               </a>
                     </li>
@@ -200,44 +197,44 @@
                 <p class="contact-paragraph">
                     Todas tus opiniones son muy valiosas!
                 </p>
-                <form action="">
+                <form action=" ">
                     <div class="inputs-group">
-                        <input type="text" class="inputs-group-text" placeholder="Nombre">
-                        <input type="text" class="inputs-group-text" placeholder="Apellido">
+                        <input type="text" class="inputs-group-text" placeholder="Nombre ">
+                        <input type="text" class="inputs-group-text" placeholder="Apellido ">
                     </div>
                     <div class="inputs-group">
-                        <input type="email" class="inputs-group-email" placeholder="Tu mejor e-mail">
-                        <input type="submit" class="inputs-group-btn" value="Suscribirse">
+                        <input type="email" class="inputs-group-email" placeholder="Tu e-mail ">
+                        <input type="submit" class="inputs-group-btn" value="Suscribirse ">
                     </div>
                 </form>
                 <ul class="social-icons">
                     <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                        <a href="# " class="social-icons-link">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
-                    <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                    <li class="social-icons-item ">
+                        <a href="# " class="social-icons-link ">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                        <a href="# " class="social-icons-link">
                             <i class="fab fa-google-plus-g"></i>
                         </a>
                     </li>
                     <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                        <a href="# " class="social-icons-link">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                        <a href="# " class="social-icons-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li class="social-icons-item">
-                        <a href="#" class="social-icons-link">
+                        <a href="# " class="social-icons-link">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
@@ -249,10 +246,10 @@
                 </h3>
                 <ul class="contact-list">
                     <li class="contact-list-item">
-                        <a href="#" class="contact-list-link">+57 324541-0000</a>
+                        <a href="# " class="contact-list-link">+57 324541-0000</a>
                     </li>
                     <li class="contact-list-item">
-                        <a href="#" class="contact-list-link">edwardgabriel.acosta@gmail.com</a>
+                        <a href="# " class="contact-list-link">edwardgabriel.acosta@gmail.com</a>
                     </li>
                     <li class="contact-list-item">
                         <a class="contact-list-link">Colombia</a>
@@ -266,6 +263,11 @@
         <!-- end of footer -->
 
     </div>
+    <script>
+        function mostrarGaleria(id) {
+            window.location.href = 'shop.html?galeria=' + id;
+        }
+    </script>
 </body>
 
 </html>

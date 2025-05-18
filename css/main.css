@@ -598,7 +598,7 @@ html {
 
 @media (max-width: 560px) {
     .product-description {
-        background-color: transparent;
+        background-color: rgba(180, 54, 43, 0.619);
         border: none;
     }
 }
@@ -646,11 +646,11 @@ html {
     font-family: 'Josefin Sans';
     font-size: 1.6rem;
     text-decoration: none;
-    color: #f5b149;
+    color: #eeeceae6;
     display: block;
     padding: .5rem 1rem;
     border: 0.1rem solid color quaternary;
-    background-color: #666666;
+    background-color: #e7343481;
 }
 
 @media (max-width: 1000px) {
@@ -670,6 +670,18 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin: 2rem 3rem 0 3rem;
+    padding: .7rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .slideshow {
@@ -782,4 +794,68 @@ html {
         visibility: hidden;
         opacity: 0;
     }
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+
+.producto-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.producto-titulo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.galeria {
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    gap: 1.5rem;
+    margin: 2rem 3rem;
+}
+
+.galeria.active {
+    display: grid;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: .7rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.btn-volver {
+    display: inline-block;
+    margin: 2rem 3rem 0 3rem;
+    padding: .7rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
